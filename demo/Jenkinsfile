@@ -25,7 +25,7 @@ pipeline {
                 }
             }
        }
-        stage('Test') {
+        stage('Install') {
             steps {
                 dir('demo'){
                 sh 'mvn -B -DskipTests clean install'
